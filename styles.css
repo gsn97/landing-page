@@ -1,8 +1,32 @@
 * {
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 body {
     display: flex;
     flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+header, .sec1, footer {
+    background-color: #1F2937;
+}
+
+.header-links a, .hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
 }
