@@ -15,7 +15,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 150px;
-    
 }
 
 header, .sec1, footer {
@@ -53,12 +52,17 @@ header, .sec1, footer {
 
 .sec1, .sec2, .sec3, .sec4 {
     flex: 1;
-    padding: 20px 150px;
+    padding: 50px 150px;
+    align-items: center;
+    justify-content: center;
 }
 
 .sec1 {
     display: flex;
     flex-direction: row nowrap;
+    gap: 50px;
+    justify-content: center;
+
 }
 
 .sec1info {
@@ -66,23 +70,33 @@ header, .sec1, footer {
     flex-flow: column wrap;
     align-items: start;
     justify-content: center;
+    gap: 10px;
+    max-width: 1000px;
 }
 
 .sec1info button {
     border: transparent;
 }
 
+.sec2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 70px;
+}
+
 .sec2info {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .sec2gallery {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    gap: 40px;
 }
 
 .sec2gallery div {
@@ -99,7 +113,18 @@ header, .sec1, footer {
 }
 
 .sec3 {
-    background-color: #E5E7EB;;
+    background-color: #E5E7EB;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.sec3text {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 1500px;
+    justify-content: center;
+    margin: 75px;
 }
 
 .sec3quote {
@@ -107,21 +132,30 @@ header, .sec1, footer {
     font-weight: lighter;
     font-style: italic;
     color: #1F2937;
+    max-width: 1500px;
 }
 
 .sec3quoter {
     font-size: 30px;
     font-weight: bold;
-    text-align: right;
+    align-self: flex-end;
+}
+
+.sec4 {
+    display: flex;
+    justify-content: center;
+    
 }
 
 .banner {
     display: flex;
-    padding: 40px;
+    padding: 80px;
     border-radius: 10px;
-    justify-content: space-around;
-    gap: 200px;
+    align-items: center;
+    gap: 100px;
     margin: 40px;
+    max-width: 2000px;
+    max-height: 400px;
 }
 
 button, .banner {
@@ -147,3 +181,11 @@ button, .banner {
     flex-shrink: 0;
 }
 
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+footer a {
+    font-size: 20px;
+}
