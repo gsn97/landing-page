@@ -14,7 +14,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 20px 150px;
+    
 }
 
 header, .sec1, footer {
@@ -25,6 +26,11 @@ header, .sec1, footer {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+}
+
+.header-links {
+    display: flex;
+    gap: 10px;
 }
 
 .header-links a, .hero-secondary, footer a {
@@ -47,6 +53,7 @@ header, .sec1, footer {
 
 .sec1, .sec2, .sec3, .sec4 {
     flex: 1;
+    padding: 20px 150px;
 }
 
 .sec1 {
@@ -59,6 +66,10 @@ header, .sec1, footer {
     flex-flow: column wrap;
     align-items: start;
     justify-content: center;
+}
+
+.sec1info button {
+    border: transparent;
 }
 
 .sec2info {
@@ -104,9 +115,27 @@ header, .sec1, footer {
     text-align: right;
 }
 
+.banner {
+    display: flex;
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: space-around;
+    gap: 200px;
+    margin: 40px;
+}
+
 button, .banner {
     background-color: #3882F6;
     color: white;
+}
+
+.banner-heading {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.banner-info {
+    font-size: 18px;
 }
 
 .signup {
@@ -115,8 +144,6 @@ button, .banner {
     padding: 8px 40px;
     font-size: 20px;
     font-weight: 700;
+    flex-shrink: 0;
 }
 
-.sec1info button {
-    border: transparent;
-}
